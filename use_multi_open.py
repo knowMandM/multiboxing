@@ -77,7 +77,7 @@ def func_startOne(instance):
             print u'别乱输,ok?'
     
     ObjConfig = multi_open.getConfigInstance()
-    multi_open.startOneProcess(seq, 0, ObjConfig, instance.get_listAddress())
+    multi_open.startOneProcess(seq, seq, ObjConfig, instance.get_listAddress())
     ObjConfig.saveOriInfo()
     
 def chooseSeq():
@@ -98,7 +98,7 @@ def closeWindow(instance):
         if hwnd > 0:
             win32api.SendMessage(hwnd, win32con.WM_CLOSE,0,0)
         else:
-            break        
+            break
         
 def listRecord(instance):
     lst = instance.get_listAddress()
@@ -138,7 +138,7 @@ if __name__ == "__main__"    :
 #                   Created on 2017.12.14                    #
 #============================================================#
 '''
-    dumpFile = '''./Account.data'''
+    dumpFile = '''D:\Account.dmp'''
     obj = account_manager.AddressRecord(dumpFile)
 
     while True:
