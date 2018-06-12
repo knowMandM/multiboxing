@@ -18,7 +18,7 @@ config = {
 
 # 配置用户名密码
 user_list = [
-    {'username':'chenej01', 'password':'666554aa'},
+    #{'username':'chenej01', 'password':'666554aa'},
     #{'username':'chenej02', 'password':'666554xa'},
     #{'username':'chenej03', 'password':'666554xa'},
     #{'username':'chenej05', 'password':'666554xa'},
